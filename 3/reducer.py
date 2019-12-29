@@ -20,7 +20,7 @@ for line in sys.stdin:
     else:
       if currentQueryInProccess:
         outputList[currentPatternInProccess] = patternCount
-        print("for triple [{0} , {1}, {2} ] there exists patterns as follows: {3}".format(currentQueryInProccess,currentDocInProccess,currentRankInProccess, outputList))
+        print("for triple [{0} , {1}, {2} ] there exists patterns as follows: {3}".format(int(currentQueryInProccess),int(currentDocInProccess),int(currentRankInProccess), outputList))
       outputList = {}
       currentQueryInProccess,currentDocInProccess,currentRankInProccess,currentPatternInProccess = data
       patternCount = 1
